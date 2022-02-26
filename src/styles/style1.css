@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+  background-image: radial-gradient(circle, rgb(0 0 0 / 73%), rgb(31 31 149) 104%);
+  /* background-image: radial-gradient(circle at top right, rgb(239 236 255), rgb(116 113 117) 80%); */
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+
+.main-container {
+  margin: auto;
+  text-align: center;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+}
+
+#search-input,
+button {
+  border: 1px solid #fffafa;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+#search-input{
+  width: 300px;
+}
+button{
+  cursor: pointer;
+}
+
+
+#search-button {
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+#random-button {
+  margin-left: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+
+
+
+
+
+.bottom-search-result {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.bottom-search-meal-card {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+
+.bottom-search-meal-card img {
+  width: 100%;
+  height: 100%;
+  border: 4px #fff solid;
+  border-radius: 2px;
+}
+
+
+.bottom-search-hover-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+}
+
+.bottom-search-hover-content:hover {
+  opacity: 1;
+}
+
+
+.bottom-meal-container {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.bottom-meal-container img {
+  width: 300px;
+  margin: 15px;
+  border: 4px #fff solid;
+  border-radius: 2px;
+}
+
+.bottom-meal-name {
+  margin: 20px;
+  padding: 10px;
+  border: 2px #e09850 dashed;
+  border-radius: 5px;
+}
+
+.bottom-meal-container p {
+  margin: o;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.bottom-meal-container ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.bottom-meal-container ul li {
+  border-radius: 5px;
+  background-color: white;
+  display: inline-block;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+}
