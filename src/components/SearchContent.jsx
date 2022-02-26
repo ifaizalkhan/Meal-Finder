@@ -3,7 +3,6 @@ import React from "react";
 export default function SearchContent({ search, handleClick }) {
 
   if (search.arr !== undefined && search.arr.length>0) {
-    console.log(search.arr.length);
     return (
       <div className="bottom-search-container">
         <div id="heading"><h2>Search Results for '{search.item}'</h2></div>

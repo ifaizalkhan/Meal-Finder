@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+    .bottom-meal-container {
+        width: 90%;
+      }
+    
+      .bottom-search-result {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+      .bottom-search-meal-card {
+        height: 150px;
+        width: 150px;
+      }
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  input {
+    width: 100%;
+  }
+  .bottom-meal-container {
+    width: 90%;
+  }
+
+  .bottom-search-result {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bottom-search-meal-card {
+    height: 115px;
+    width: 115px;
+  }
+
+}
+
+@media only screen and (min-width: 319px) and (max-width: 380px) {
+    #search-input {
+      width: 100%;
+    }
+    /* .bottom-meal-container {
+      width: 70%;
+    } */
+  
+    .bottom-search-result {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .bottom-search-meal-card {
+      height: 85px;
+      width: 85px;
+    }
+  
+  }

@@ -4,6 +4,7 @@ import SearchContent from './components/SearchContent';
 import RandomContent from './components/RandomContent';
 import './styles/style1.css';
 import './styles/style2.css';
+import './styles/style3.css';
 
 
 import Loader from './components/Loader';
