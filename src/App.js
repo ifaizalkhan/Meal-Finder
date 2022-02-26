@@ -4,7 +4,6 @@ import SearchContent from './components/SearchContent';
 import RandomContent from './components/RandomContent';
 import './styles/style1.css';
 import './styles/style2.css';
-import './styles/style3.css';
 
 
 import Loader from './components/Loader';
@@ -33,7 +32,8 @@ export default function App() {
       let arr = [];
       await fetch(api + e)
         .then((blob) => blob.json())
-        .then((data) => arr.push(...data.meals));
+        .then((data) =>arr.push(...data.meals))
+        .catch((e)=>console.log(e));
       let yo = { arr: arr, item: e }
       setsearch(yo);
       setisloading(false);
@@ -45,6 +45,11 @@ export default function App() {
   async function handleRandom() {
     setisloading(true);
     let arr = [];
+    setmeal('');
+    setimg('');
+    setcategory('');
+    setinst('');
+    setingredients([]);
     setitem('');
     setsearch([]);
     setingredients([]);
